@@ -12,3 +12,5 @@ This repository contains the files created and used for the Opportunities for Un
 					b) Support Vector Machines - 78%
 					c) K-Nearest Neighbours - 78%
 
+2. "cmap.py" - This script is used to create an image from a connection matrix of a given dataset and save them in a folder.
+
