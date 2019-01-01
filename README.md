@@ -1,6 +1,8 @@
 # OUR-2018
 This repository contains the files created and used for the Opportunities for Undergraduate Research Program (OUR), 2018.
 
+Topic of the OUR - Application of Capsule Nets Pharmacophore-based Virtual High-throughput Screening
+
 # Files Information
 
 1. **ML Methods on CDK2.binary.ipynb** - This file contains the results of Different Machine Learning (Classification) Algorithms. The results are as followed - 
