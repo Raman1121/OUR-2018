@@ -154,10 +154,8 @@ def PrimaryCap(inputs, dim_capsule, n_channels, kernel_size, strides, padding):
     :return: output tensor, shape=[None, num_capsule, dim_capsule]
     """
 
-    #Changing the Conv2D to Conv1D here
-    '''output = layers.Conv2D(filters=dim_capsule*n_channels, kernel_size=kernel_size, strides=strides, padding=padding,
-                           name='primarycap_conv2d')(inputs)'''
-    output = layers.Conv1D(filters = dim_capsule*n_channels, kernel_size = kernel_size, strides = strides, padding = padding,
-                            name = 'primarycap_conv1d')(inputs)
+    
+    output = layers.Conv2D(filters=dim_capsule*n_channels, kernel_size=kernel_size, strides=strides, padding=padding,
+                           name='primarycap_conv2d')(inputs)
     outputs = layers.Reshape(target_shape=[-1, dim_capsule], name='primarycap_reshape')(output)
     return layers.Lambda(squash, name='primarycap_squash')(outputs)
